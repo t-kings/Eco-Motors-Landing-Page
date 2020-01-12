@@ -1,0 +1,784 @@
+* {
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Adamina';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: url("Tires.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mob_nav2 {
+    position: fixed;
+    right: 0;
+    padding: 0;
+    width: 80vw;
+    margin: 0;
+    top: 60px;
+    list-style-type: none;
+    z-index: 999;
+    background: black;
+    border-radius: 10px;
+    height: 70vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.mob_nav2 li {
+    width: 100%;
+    text-align: left;
+}
+
+.mob_nav2 li a {
+    color: grey;
+    padding-left: 10vw;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+}
+
+nav {
+    position: relative;
+}
+
+#ccc {
+    display: none;
+}
+
+.nav_2 {
+    padding: 0;
+    padding-right: 5%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    background: white;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: space-around;
+    color: grey;
+    font-size: 15px;
+}
+
+.nav_2 li {
+    margin: 0 2%;
+}
+
+.nav_2 li a {
+    color: grey;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 1s;
+}
+
+.left_nav {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+.left_nav .title {
+    width: 25%;
+    font-family: 'Acme';
+    text-align: left;
+    padding: 0 8px;
+    position: relative;
+}
+
+.left_nav strong {
+    font-size: 20px;
+    color: rgb(13, 216, 6);
+    line-height: 1;
+}
+
+.left_nav b {
+    font-size: 20px;
+    color: white;
+    line-height: 1;
+}
+
+.left_nav i {
+    font-size: 15px;
+    color: grey;
+    line-height: 1;
+}
+
+.left_nav ul {
+    padding: 0;
+    width: 75%;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+.left_nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 12px;
+    transition: all 1s;
+}
+
+.left_nav li a:hover {
+    color: rgb(2, 63, 0);
+}
+
+#top_nav {
+    position: fixed;
+    top: -140px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 999;
+    transition: all 0.5s;
+}
+
+.top_nav {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-around;
+    background: white;
+}
+
+.top_nav .title {
+    width: 25%;
+    text-align: left;
+    padding: 0 8px;
+    border-bottom: 2px solid green;
+    position: relative;
+}
+
+.top_nav strong {
+    font-size: 20px;
+    color: black;
+    line-height: 1;
+}
+
+.top_nav b {
+    font-size: 20px;
+    color: green;
+    line-height: 1;
+}
+
+.top_nav i {
+    font-size: 15px;
+    color: grey;
+    line-height: 1;
+}
+
+.top_nav ul {
+    padding: 0;
+    width: 75%;
+    margin: 0;
+    list-style-type: none;
+    background: linear-gradient(to right, green, rgb(0, 10, 0));
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
+    clip-path: polygon(nonzero, 4% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.top_nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 12px;
+    transition: all 1s;
+}
+
+#ccc,
+#cccc {
+    display: none;
+}
+
+.top_nav li a:hover {
+    color: grey;
+}
+
+.intro {
+    display: flex;
+    flex-flow: row wrap;
+    background-size: cover;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.intro_1 {
+    width: 40%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.intro_1 div {
+    position: absolute;
+    padding: 20px;
+}
+
+.slide {
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        left: -200%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes fade {
+    from {
+        left: -200%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.slide1 {
+    -webkit-animation-name: slide1;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade1;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    -webkit-animation-delay: 0.5s;
+}
+
+.slide2 {
+    -webkit-animation-name: slide2;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade2;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+@-webkit-keyframes fade2 {
+    from {
+        left: -200%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes fade2 {
+    from {
+        left: -200%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes fade1 {
+    from {
+        left: -200%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes fade1 {
+    from {
+        left: -200%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.intro_1 h2 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    -webkit-text-stroke: 1px black;
+}
+
+.intro_1 h3 {
+    color: white;
+    font-style: italic;
+    position: relative;
+    font-family: 'Sofia';
+    font-size: 20px;
+    text-transform: capitalize;
+    background: rgba(0, 0, 0, 0.301);
+    text-align: center;
+}
+
+.intro_1 a {
+    color: white;
+    padding: 10px;
+    width: 70%;
+    background: linear-gradient(to right, green, skyblue);
+    font-size: 20px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom: 10vh;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.intro_2 {
+    display: flex;
+    width: 55%;
+    flex-flow: row wrap;
+    background-size: cover;
+    justify-content: flex-start;
+    height: 80vh;
+    align-items: center;
+    align-content: space-around;
+}
+
+.intro_2 div {
+    color: white;
+    margin: 2vh;
+    cursor: pointer;
+    width: 20vh;
+    height: 20vh;
+    font-size: 12px;
+    overflow: hidden;
+    text-transform: lowercase;
+    position: relative;
+    display: flex;
+    box-shadow: 3px 3px 1px 0px grey;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-flow: column wrap;
+    -webkit-animation-name: intro2;
+    -webkit-animation-duration: 10s;
+    animation-name: intro2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes intro2 {
+    0% {
+        opacity: 0;
+        transform: translateY(10vh);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes intro2 {
+    0% {
+        opacity: 0;
+        transform: translateY(10vh);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro_2 div img {
+    position: absolute;
+    width: 25vh;
+    height: 25vh;
+}
+
+.intro_2 div h3 {
+    position: absolute;
+    font-family: 'Calligraffitti';
+}
+
+.about h1 {
+    text-align: center;
+    font-family: 'Sofia';
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.about {
+    padding-top: 10vh;
+    background: white;
+    background: url("bg4.jpg");
+    background-size: cover;
+    min-height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about p {
+    text-align: center;
+    color: grey;
+    font-family: 'Amita';
+    margin: 0px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Amita';
+}
+
+.about h4 {
+    text-align: right;
+    font-size: 15px;
+    font-family: 'Amita';
+    color: grey;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex_1:first-child {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 38%;
+    padding: 20px;
+    border-top-left-radius: 40vh;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(126, 29, 29, 0));
+}
+
+.flex_1:last-child {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 38%;
+    padding: 20px;
+    border-top-right-radius: 40vh;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
+}
+
+.flex_1:hover h2 {
+    color: green;
+}
+
+.flex_1:hover {
+    transform: translateY(-5vh);
+}
+
+.flex_2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.flex_2 h2,
+.flex_2 p {
+    text-align: right;
+}
+
+.flex_2 div:first-child {
+    width: 60%;
+}
+
+.flex_3 div:last-child {
+    width: 60%;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, rgb(0, 255, 0), black);
+    border-top-right-radius: 40%;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    box-shadow: 0 0 10px 3px green;
+    flex-flow: column wrap;
+}
+
+.icon img {
+    width: 60%;
+}
+
+.flex_3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.flex_3 h2,
+.flex_3 h4 {
+    text-align: left;
+}
+
+.flex_3 .icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, rgb(0, 255, 0), black);
+    border-top-right-radius: 40%;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 50px;
+    flex-flow: column wrap;
+}
+
+.yu {
+    width: 20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yu img {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+}
+
+.imag {
+    display: none;
+}
+
+
+/* Fading animation */
+
+.popp {
+    -webkit-animation-name: popp;
+    -webkit-animation-duration: 1.5s;
+    animation-name: popp;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes popp {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes popp {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.cust {
+    background: url("bg2.jpg");
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 40vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#counter {
+    width: 100%;
+    text-align: center;
+}
+
+#counter div {
+    border: 2px solid green;
+    color: white;
+    font-size: 25px;
+    margin: 0 3%;
+    padding: 20px 0px;
+    width: 25%;
+    padding-bottom: 0px;
+    display: inline-block;
+    position: relative;
+}
+
+#counter div h2 {
+    margin: 0px;
+    padding: 2px 10px;
+    width: 100%;
+    text-align: left;
+    background: green;
+    font-size: 10px;
+    clip-path: polygon(nonzero, 0 0, 50% 0, 60% 100%, 0 100%);
+}
+
+.products {
+    background: url("bg1.jpg");
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    padding-top: 10vh;
+    min-height: 40vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products p {
+    text-align: center;
+    font-family: 'Sofia';
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.products ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.products ul li {
+    width: 30vh;
+    height: 30vh;
+    flex-shrink: 0;
+    margin: 50px 50px;
+    background: radial-gradient(rgba(0, 128, 0, 0.384), rgba(255, 166, 0, 0.7));
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    box-shadow: 1px 1px 2px 0px rgb(88, 88, 88);
+}
+
+.products ul li>div {
+    scroll-snap-align: start;
+}
+
+.products ul li img {
+    position: absolute;
+    width: 110%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.products ul li h2 {
+    position: absolute;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(255, 166, 0, 0.356));
+    text-align: center;
+    border-radius: 20px;
+    bottom: -20%;
+    color: white;
+}
+
+footer {
+    background: linear-gradient(155deg, rgb(34, 4, 4), black);
+    padding-top: 10vh;
+    color: grey;
+    font-size: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer div {
+    text-align: center;
+    max-width: 400px;
+}
+
+footer h3 {
+    text-align: center;
+    background: rgb(36, 0, 0);
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    font-family: 'Amita';
+}
+
+.map {
+    height: 40vh;
+    width: 100%;
+    margin: auto;
+}
